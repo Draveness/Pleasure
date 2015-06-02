@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "PLSIcon.h"
+#import "PLSIcon+Pleasure.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) PLSIcon *icon;
 
 @end
 
@@ -16,12 +20,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.icon = [[PLSIcon alloc] initWithFrame:CGRectMake(100, 100, 40, 40) icon:[UIImage imageNamed:@"detail_user"]];
+    self.icon.iconScale = 2.0;
+    self.icon.tapBlock =  ^(PLSIcon *icon) {
+        [icon pop];
+    };
+
+    [self.view addSubview:self.icon];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
 }
+
 
 @end

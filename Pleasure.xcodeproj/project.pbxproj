@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1815BCBF1B1D447400C4389E /* PLSIcon+Pleasure.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815BCBE1B1D447400C4389E /* PLSIcon+Pleasure.m */; };
 		189781821B1CB257008A23B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 189781811B1CB257008A23B4 /* main.m */; };
 		189781851B1CB257008A23B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 189781841B1CB257008A23B4 /* AppDelegate.m */; };
 		189781881B1CB257008A23B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189781871B1CB257008A23B4 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		1897818D1B1CB258008A23B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1897818C1B1CB258008A23B4 /* Images.xcassets */; };
 		189781901B1CB258008A23B4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1897818E1B1CB258008A23B4 /* LaunchScreen.xib */; };
 		1897819C1B1CB258008A23B4 /* PleasureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1897819B1B1CB258008A23B4 /* PleasureTests.m */; };
+		189781A81B1CBBE9008A23B4 /* PLSIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 189781A71B1CBBE9008A23B4 /* PLSIcon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1815BCBD1B1D447400C4389E /* PLSIcon+Pleasure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PLSIcon+Pleasure.h"; sourceTree = "<group>"; };
+		1815BCBE1B1D447400C4389E /* PLSIcon+Pleasure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PLSIcon+Pleasure.m"; sourceTree = "<group>"; };
 		1897817C1B1CB257008A23B4 /* Pleasure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pleasure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189781801B1CB257008A23B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		189781811B1CB257008A23B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		189781951B1CB258008A23B4 /* PleasureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PleasureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1897819A1B1CB258008A23B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1897819B1B1CB258008A23B4 /* PleasureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PleasureTests.m; sourceTree = "<group>"; };
+		189781A61B1CBBE9008A23B4 /* PLSIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLSIcon.h; sourceTree = "<group>"; };
+		189781A71B1CBBE9008A23B4 /* PLSIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLSIcon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		1897817E1B1CB257008A23B4 /* Pleasure */ = {
 			isa = PBXGroup;
 			children = (
+				189781A51B1CBB41008A23B4 /* Classes */,
 				189781831B1CB257008A23B4 /* AppDelegate.h */,
 				189781841B1CB257008A23B4 /* AppDelegate.m */,
 				189781861B1CB257008A23B4 /* ViewController.h */,
@@ -117,6 +124,25 @@
 				1897819A1B1CB258008A23B4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		189781A51B1CBB41008A23B4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				189781A61B1CBBE9008A23B4 /* PLSIcon.h */,
+				189781A71B1CBBE9008A23B4 /* PLSIcon.m */,
+				1815BCBD1B1D447400C4389E /* PLSIcon+Pleasure.h */,
+				1815BCBE1B1D447400C4389E /* PLSIcon+Pleasure.m */,
+				189781A91B1D3CBD008A23B4 /* Icons */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		189781A91B1D3CBD008A23B4 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +245,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189781A81B1CBBE9008A23B4 /* PLSIcon.m in Sources */,
 				189781881B1CB257008A23B4 /* ViewController.m in Sources */,
+				1815BCBF1B1D447400C4389E /* PLSIcon+Pleasure.m in Sources */,
 				189781851B1CB257008A23B4 /* AppDelegate.m in Sources */,
 				189781821B1CB257008A23B4 /* main.m in Sources */,
 			);
@@ -416,6 +444,7 @@
 				189781A11B1CB258008A23B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		189781A21B1CB258008A23B4 /* Build configuration list for PBXNativeTarget "PleasureTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +453,7 @@
 				189781A41B1CB258008A23B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
